@@ -12,21 +12,21 @@ html {
 
 /* ヘッダー */
 header {
-  background-color: rgba(0, 0, 0);
+  background-color: rgba(0, 0, 0,0.8);
   color: white;
-  padding: 40px 20px; /* ←上下40pxにして高さアップ */
+  padding: 40px 80px;   /* 左右も広めに */
   text-align: center;
+  font-family: "Zen Old Mincho", serif;
+  font-size: 25px;
 }
 
-
-header nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-header nav a:hover {
-  text-decoration: underline;
+header .title {
+  display: block;       /* ブロック要素にする */
+  text-align: left;     /* 左寄せ */
+  margin: 0;            /* 上下余白リセット */
+  font-size: 23px;      /* 必要なら調整 */
+  font-weight: bold;    /* 好みで太字 */
+  justify-content: center;
 }
 
 /* メイン */
@@ -83,7 +83,7 @@ main h1 {
 }
 
 .navArea-nav {
-  padding: 50px 25px;
+  padding: 70px 25px;
 }
 
 .navArea-nav ul {
@@ -113,7 +113,7 @@ nav .gnav ul li a:hover {
 .toggle-btn {
   display: block;
   position: fixed;
-  top: 35px;
+  top: 40px;
   left: 30px;
   width: 30px;
   height: 30px;
@@ -200,6 +200,7 @@ section .title {
   text-align: center;     /* 中央揃え */
   margin-top: 80px;       /* 上にゆとり */
   letter-spacing: 2px;    /* 文字間隔を少し広げると上品 */
+  font-family: "Zen Old Mincho", serif;
 }
 
 
